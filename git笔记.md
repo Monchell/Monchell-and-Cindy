@@ -62,8 +62,8 @@
 
         然后退出编辑模式
 
-        然后`git commit --amend`
+        在用 `git log` 然后`git commit --amend`
 
         `git rebase --continue`即可在本地端修改
-
+    
         如果要到网络则需要`push -f`(慎重)
