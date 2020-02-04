@@ -1,6 +1,6 @@
 ## Git使用
 
-* 2020.2.2
+* 
 
   * 主要工作
 
@@ -62,8 +62,11 @@
 
         然后退出编辑模式
 
-        在用 `git log` 然后`git commit --amend`
+        在用 `git commit --amend`
 
         `git rebase --continue`即可在本地端修改
-    
         如果要到网络则需要`push -f`(慎重)
+      
+    * unstaged文件，再某个节点有未完成工作然后切节点会出现暂存文件
+    
+      * 需要就add，不需要就restore即可，使用git status时会有操作提示所以问题8大
