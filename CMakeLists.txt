@@ -21,7 +21,7 @@ include_directories("C:/Program Files/CoppeliaRobotics/CoppeliaSimEdu/programmin
 include_directories("C:/Program Files/CoppeliaRobotics/CoppeliaSimEdu/programming/common")
 
 # 链接库路径
-link_directories("D:/Program Files/opencv/build-mingw64/lib")
+link_directories("D:/Program Files/opencv/build-mingw/lib")
 
 # 添加链接库
 link_libraries("libopencv_videoio400")

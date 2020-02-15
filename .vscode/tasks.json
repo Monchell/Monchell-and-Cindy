@@ -12,7 +12,7 @@
                 "-ID:/Program Files/opencv/build/include/opencv2",
                 "-ID:/Program Files/opencv/build/include",
                 "-I${fileDirname}\\..\\Inc",
-                "-LD:/Program Files/opencv/build-mingw64/lib",
+                "-LD:/Program Files/opencv/build-mingw/lib",
                 "-llibopencv_videoio400",
                 "-llibopencv_calib3d400",
                 "-llibopencv_core400",
