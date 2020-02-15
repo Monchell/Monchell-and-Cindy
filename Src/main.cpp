@@ -1,7 +1,8 @@
 #include <iostream>
+#include "shape.h"
 using namespace std;
 int main()
 {
-    cout<<1111;
+    shape_out();
     return 0;
 }
