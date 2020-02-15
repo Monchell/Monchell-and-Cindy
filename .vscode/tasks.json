@@ -1,0 +1,36 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "C:\\mingw\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${fileDirname}//*.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-ID:/Program Files/opencv/build/include/opencv2",
+                "-ID:/Program Files/opencv/build/include",
+                "-I${fileDirname}\\..\\Inc",
+                "-LD:/Program Files/opencv/build-mingw64/lib",
+                "-llibopencv_videoio400",
+                "-llibopencv_calib3d400",
+                "-llibopencv_core400",
+                "-llibopencv_dnn400",
+                "-llibopencv_features2d400",
+                "-llibopencv_flann400",
+                "-llibopencv_highgui400",
+                "-llibopencv_imgcodecs400",
+                "-llibopencv_imgproc400",
+                "-llibopencv_ml400",
+                "-llibopencv_photo400",
+                "-llibopencv_stitching400",
+                "-llibopencv_video400"
+            ],
+            "options": {
+                "cwd": "C:\\mingw\\mingw64\\bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
