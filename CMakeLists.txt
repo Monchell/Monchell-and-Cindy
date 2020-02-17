@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 # 预编译头添加 add_definitions(-D NDEBUG)看需求，有些库需要确定一些预编译头
 # Inc头文件路径
 include_directories("Inc")
+include_directories("shape/Inc")
 
 # opencv头文件路径
 include_directories("D:/Program Files/opencv/build/include/opencv2")
@@ -42,10 +43,13 @@ link_libraries("libopencv_video400")
 file(GLOB_RECURSE INCLUDES "Inc/*.h" "Inc/*.hpp")
 
 # 枚举源文件
+# src，main函数所在
 aux_source_directory("Src" SOURCES)
+# shape 父类容器指针指向子类对象的例程
+aux_source_directory("shape/Src" SHAPE)
 
 # 输出路径
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
 # 生成可执行的文件，名字，源文件，头文件
-add_executable(${PROJECT_NAME} ${SOURCES} ${INCLUDE})
+add_executable(${PROJECT_NAME} ${SOURCES} ${SHAPE} ${INCLUDE})

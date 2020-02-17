@@ -1,5 +1,6 @@
 #include <iostream>
 void shape_out();
+void sample();
 class shape_type
 {
     public: 

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-//鐖剁被鎸囬拡鎸囧悜娲剧敓绫诲璞＄殑渚嬬▼
+//c++例程shape父类指针指向派生类对象
 #include "shape.h"
 #include <vector>
 #include <conio.h>
@@ -15,7 +14,8 @@ void shape_out()
     char i;
     while (i!='q')
     {
-        cin>>i;
+        cout<<"1.添加一个圆\n2.添加一个点\n3.展示\n4.清屏\nq.退出\n";
+        i=getch();
         switch (i)
         {
             int x, y, r;
@@ -45,19 +45,9 @@ void shape_out()
         {
             delete shape[i];
         }
-=======
-#include "shape.h"
-shape_type * circle=new circle_type(point_type(1,2),3);
-shape_type * point=new point_type(1,2);
-shape_type *(obj[3])={new circle_type(point_type(1,2),3),new point_type(1,2),new circle_type(point_type(1,2),3)}; 
-void shape_out(){
-    for(int i=0;i<=2;i++)
-    {
-        obj[i]->draw();
-    }
-    for(int i=0;i<=2;i++)
-    {
-        delete obj[i];
-    }
->>>>>>> 1a68c63b22fc4b1cbb9bc54f4695e854cf4338f1
+}
+void sample()
+{
+    cout<<"run shape sample,运行c++例程shape父类指针指向派生类对象\n";
+    shape_out();
 }
