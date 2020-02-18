@@ -46,7 +46,7 @@ void shape_out()
             delete shape[i];
         }
 }
-void sample()
+void sample_shape()
 {
     cout<<"run shape sample,运行c++例程shape父类指针指向派生类对象\n";
     shape_out();

@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Inc头文件路径
 include_directories("Inc")
 include_directories("shape/Inc")
+include_directories("point/Inc")
 
 # opencv头文件路径
 include_directories("D:/Program Files/opencv/build/include/opencv2")
@@ -47,9 +48,11 @@ file(GLOB_RECURSE INCLUDES "Inc/*.h" "Inc/*.hpp")
 aux_source_directory("Src" SOURCES)
 # shape 父类容器指针指向子类对象的例程
 aux_source_directory("shape/Src" SHAPE)
+# mypoint，点与复数 运算符重载例程
+aux_source_directory("point/Src" POINT)
 
 # 输出路径
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
 # 生成可执行的文件，名字，源文件，头文件
-add_executable(${PROJECT_NAME} ${SOURCES} ${SHAPE} ${INCLUDE})
+add_executable(${PROJECT_NAME} ${SOURCES} ${SHAPE} ${POINT} ${INCLUDE})
