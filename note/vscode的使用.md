@@ -69,7 +69,7 @@
 
 - 写在最后：我不知道，也有可能是我的操作有误，安装的插件有问题，但这些都是我的真实案例，希望能做一个提醒吧。唔，其实后来生气过后，冷静下来想想，就算需要删很多东西，但如果对于一个目录工程量浩大的项目来说，或许真的是一个自动的快捷方式吧（但自动更新回去我是真的不能理解，可能还是操作有误）
 
-顺便附上我学习的网址：[https://www.runoob.com/markdown/md-link.html](https://www.runoob.com/markdown/md-link.html)
+顺便附上我学习的网址：[https://www.jianshu.com/p/4721ddd27027](https://www.jianshu.com/p/4721ddd27027)
 
 2020.02.24 Written by Cindy
 
